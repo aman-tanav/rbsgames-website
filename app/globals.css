@@ -1,3 +1,5 @@
+
+/* 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,22 +8,65 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  
+    font-family: 'Montserrat', sans-serif;
+}
+/* game-development-page */
+.game-dev{
+  background-image: url("../public/assets/image/gamedevelopment.png");
+  background-position: center;
+  height:75vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 32px;
+  background-size: cover;
+  color: #fff;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+.browse-inner-data h2{
+  color: #000;
+  font-size: 18px;
+  
+}
+.browse-inner-data p{
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.gm-ct{
+  background-image: url("../public/assets/image/actiongames.png");
+  background-position: center;
+  height:auto;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-size: cover;
+  border-radius: 8px;
+  height: 215px;
+}
+.gm-ct h3{
+  font-size:14px;
+  color: #fff;
+  font-weight:800;
+  font-family: 'Montserrat', sans-serif;
 }
