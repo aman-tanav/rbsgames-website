@@ -16,7 +16,7 @@ export default function GameDevelopment() {
           </div>
         </div>
       </div> */}
-      <div className='bannerCommon game-dev'>
+      <div className="bannerCommon.game-dev">
         <div className='outterText'>
           <h2>Game development</h2>
         </div>
