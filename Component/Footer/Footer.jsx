@@ -1,11 +1,14 @@
+'use client'
+
+
 import React from 'react'
 
 import { Col, Container, Row } from 'react-bootstrap'
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 const Footer = () => {
-    const router = useRouter();
+    // const router = useRouter();
     return (
         <>
             <footer className="siteFooter">
@@ -13,9 +16,9 @@ const Footer = () => {
                     <Container>
                         <Row>
                             <Col lg="12" className='my-2'>
-                                <div className="log">
+                            <a href="/" className='text-white fw-sbold'>    <div className="log">
                                     <img src="../assets/image/logo.png" alt="" className="img-fluid" />
-                                </div>
+                                </div></a>
                             </Col>
                         </Row>
                     </Container>
@@ -25,17 +28,25 @@ const Footer = () => {
                         <Row>
                             <Col lg="12" className='my-2'>
                                 <ul className="list-unstyled ps-0 mb-0 d-flex flex-wrap align-items-center justify-content-center gap-10">
-                                    <li className="px-3">
-                                        <Link href="" className='text-white fw-sbold'>Home</Link>
+                                <li className="px-3">
+                                        <Link href="/" passHref>
+                                            <p className='text-white fw-sbold m-0' data-legacy-behavior="true">Home</p>
+                                        </Link>
                                     </li>
                                     <li className="px-3">
-                                        <Link href="" className='text-white fw-sbold'>About us</Link>
+                                        <Link href="/about" passHref>
+                                            <p className='text-white fw-sbold m-0' data-legacy-behavior="true">About us</p>
+                                        </Link>
                                     </li>
                                     <li className="px-3">
-                                        <Link href="" className='text-white fw-sbold'>Solutions</Link>
+                                        <Link href="/solution" passHref>
+                                            <p className='text-white fw-sbold m-0' data-legacy-behavior="true">Solutions</p>
+                                        </Link>
                                     </li>
                                     <li className="px-3">
-                                        <Link href="" className='text-white fw-sbold'>Business</Link>
+                                        <Link href="/contact-us" passHref>
+                                            <p className='text-white fw-sbold m-0' data-legacy-behavior="true">Contact Us</p>
+                                        </Link>
                                     </li>
                                 </ul>
                             </Col>
@@ -50,16 +61,16 @@ const Footer = () => {
                                     <h6 className="fw-bold text-white m-0 pb-3 text-center">VISIT</h6>
                                     <ul className="list-unstyled ps-0 mb-0 d-flex flex-wrap align-items-center justify-content-center gap-10 mt-3 pb-4 border-bottom border-white">
                                         <li className="px-3">
-                                            <Link href="" className='text-white fw-sbold'>Home</Link>
+                                            <Link href="/careers" passHref className='text-white fw-sbold'>Careers</Link>
                                         </li>
                                         <li className="px-3">
-                                            <Link href="" className='text-white fw-sbold'>About us</Link>
+                                            <Link href="news" className='text-white fw-sbold'>News</Link>
                                         </li>
                                         <li className="px-3">
-                                            <Link href="" className='text-white fw-sbold'>Solutions</Link>
+                                            <Link href="" className='text-white fw-sbold'>Community</Link>
                                         </li>
                                         <li className="px-3">
-                                            <Link href="" className='text-white fw-sbold'>Business</Link>
+                                            <Link href="" className='text-white fw-sbold'>Support</Link>
                                         </li>
                                     </ul>
                                 </div>

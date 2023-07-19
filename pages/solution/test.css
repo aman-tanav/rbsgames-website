@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bannerCommon {
+    background-image: url(../../public/assets/image/bannerBg.png);
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerCommon .outterText {
+    text-align: center;
+    width: 852px;
+    max-width: 100%;
+    padding: 0px 30px;
+}
+
+.bannerCommon .outterText h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.bannerCommon .outterText p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #ffffff;
+}
+
+.formSide h3 {
+    color: #000;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.formSide p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100%;
+    height: 78px;
+    margin-top: 21px;
+    margin-bottom: 0;
+}
+
+.formOutter input, .formOutter select, .formOutter textarea {
+    border-radius: 15px;
+    border: 2px solid #000;
+    height: 59px;
+    padding: 10px 24px;
+}
+
+.formOutter textarea {
+    height: 128px;
+}
+
+.formOutter input::placeholder, .formOutter textarea::placeholder {
+    color: #000;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.inputoutter {
+    margin-bottom: 37px;
+}
+
+.formOutter input.checkBox {
+    width: 17px;
+    height: 17px;
+    padding: 0;
+}
+
+.formOutter .form-check label.form-check-label {
+    color: #000;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 100%;
+    height: 52px;
+    padding-left: 12px;
+}
+
+.messageOutter {
+    margin-bottom: 21px;
+}
+
+button.submitBtn {
+    border-radius: 10px;
+    background: #2193F3;
+    box-shadow: 0px -1px 1px 1px rgba(52, 35, 170, 0.25) inset, 0px 1px 1px 1px rgba(255, 255, 255, 0.25) inset, 0px 0px 0px 1px #4834D4 inset, 0px 1px 2px 0px rgba(20, 14, 62, 0.25);
+    width: 162px;
+    padding: 18px 24px;
+    border: none;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.mapMain {
+    margin-top: 55px;
+}
+
+.ContactForm {
+    margin: 81px 0;
+    padding: 0 150px;
+}
+
+.formOutter select {
+    background-image: url("data:image/svg+xml,%3Csvg width='22' height='8' viewBox='0 0 22 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L11 6.99225L21 1' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-size: 22px;
+    background-position: center right 26px;
+}
+
+.container {
+    max-width: 1215px !important;
+    margin: 0 auto;
+}
+
+.mapMain img {
+    width: 100%;
+    padding-left: 56px;
+}
+
+
+.sliderOutter .slick-slider img {
+    display: block;
+    width: 100%;
+    transition: transform 0.3s ease;
+    
+}
+.sliderOutter.ourCustom .slick-slider img {
+    object-fit: scale-down;
+}
+
+.sliderOutter .slick-slide {
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.sliderOutter {
+    max-width: 1512px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    padding: 0 0 70px;
+}
+
+.sliderOutter .slick-slider>* :focus-visible {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.sliderOutter .slick-slider .slick-dots li button:before {
+    content: normal !important;
+}
+
+.sliderOutter .slick-slider .slick-dots li button {
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.sliderOutter .slick-slider .slick-dots li button::after {
+    content: "0" !important;
+}
+
+.sliderOutter .slick-slider ul.slick-dots {
+    position: static;
+    margin-top: 40px;
+}
+
+
+.browse-inner-data h3 {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    position: relative;
+    display: inline-block;
+    padding-right: 20px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+.browse-inner-data h3:after {
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center left;
+    display: block;
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    background-size: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='330' height='15' viewBox='0 0 330 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0.943604' y1='7.58862' x2='315' y2='7.58862' stroke='black'/%3E%3Ccircle cx='322.5' cy='7.5' r='7' stroke='black'/%3E%3C/svg%3E%0A");
+    bottom: 0;
+}
+
+.browse-inner-data p {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 30px;
+    padding-right: 220px;
+}
+
+.browse-inner-data {
+    margin-bottom: 28px;
+}
+
+.sliderOutter .slick-slider .sliderImg h4 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 34px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0 30px 70px;
+    background: rgba(0, 0, 0, 0.40);
+}
+
+.sliderImg {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.sliderImg:hover img {
+    transform: scale(1.1);
+}
+
+.rangeOutter {
+    text-align: center;
+}
+
+.rangMain {
+    -webkit-appearance: none;
+    width: 336px;
+    height: 25px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='335.774' height='11.547' viewBox='0 0 335.774 11.547'%3E%3Cg id='Group_1' data-name='Group 1' transform='translate(-382 -360)'%3E%3Cpath id='Arrow_2' data-name='Arrow 2' d='M.226,6,6,11.774,11.774,6,6,.226ZM6,7H172V5H6Z' transform='translate(381.773 359.773)' fill='%23a7a7a7'/%3E%3Cpath id='Arrow_3' data-name='Arrow 3' d='M164.774,6,159,.226,153.227,6,159,11.774ZM0,7H159V5H0Z' transform='translate(553 359.773)' fill='%23a7a7a7'/%3E%3C/g%3E%3C/svg%3E%0A");
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 20px;
+    background-size: contain;
+    margin-top: 10px;
+}
+
+.rangMain:hover {
+    opacity: 1;
+}
+
+.rangMain::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='249.039' height='126.71' viewBox='0 0 249.039 126.71'%3E%3Cg id='Group_2' data-name='Group 2' transform='translate(-419.065 -467.124)'%3E%3Cpath id='Path_1' data-name='Path 1' d='M196.569,72.644V180.385L251.122,127.2Z' transform='translate(412 404)' fill='%23fff' stroke='%23000' stroke-width='7'/%3E%3Cpath id='Path_2' data-name='Path 2' d='M54.552,181.385V71.644L0,126.833Z' transform='translate(424 404)' fill='%23fff' stroke='%23000' stroke-width='7'/%3E%3Crect id='Rectangle_1' data-name='Rectangle 1' width='123' height='125' transform='translate(482 468)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.srangMain::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+
+/*slider Gradient*/
+
+.slickGradient .slick-slider {
+    padding-bottom: 100px;
+}
+
+.prevArrow.sliksarrow {
+    left: calc(50% - 40px) !important;
+}
+
+.sliksarrow {
+    bottom: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.nextArrow.sliksarrow {
+    right: calc(50% - 40px) !important;
+}
+
+
+.bgGradient {
+    /* background: lightgray 50% / cover no-repeat, #FA61B3, url(../../public/assets/image/gradientBG.png); */
+    background-image: url(../../public/assets/image/gradientBG.png);
+    padding-top: 116px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgGradient .browse-inner-data h3, .bgGradient .browse-inner-data p {
+    color: #ffffff;
+}
+
+.bgGradient .sliderOutter .slick-slider .sliderImg h4 {
+    position: static;
+    background: transparent;
+    display: block;
+    text-align: left;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 34px;
+    padding-bottom: 15px;
+}
+
+.bgGradient .sliderOutter .slick-slider .sliderImg p.clientDetails {
+    color: #000;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    margin: 0;
+    padding: 0 30px;
+}
+
+.bgGradient .sliderOutter .slick-slider .sliderImg {
+    background: #ffffff;
+    padding: 10px 10px 60px;
+}
+
+.sliderOutter .slick-slide>div {
+    padding: 10px 0;
+}
+
+.bgGradient .sliderOutter .slick-slider .sliderImg .imgOuuter {
+    overflow: hidden;
+    border-radius: 15px;
+}
+.ourCustOutter {
+    margin-top: 142px;
+}

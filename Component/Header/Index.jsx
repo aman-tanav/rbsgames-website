@@ -1,7 +1,10 @@
-// "use client"
+'use client'
+
 import React, { useState } from 'react'
 import { Container, Form, Button } from 'react-bootstrap'
 import Link from 'next/link';
+
+import '../globals.css'
 
 const Header = () => {
 

@@ -1,9 +1,12 @@
+import Head from 'next/head'
 import React from 'react'
 import { Col, Container, Row, Form, Button } from 'react-bootstrap'
 
 const NewsletterIndex = () => {
     return (
         <>
+
+
             <section className="newsletter py-5 position-relative" style={{ backgroundImage: `url(../assets/image/newsletter.png)`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
                 <Container>
                     <Row className='justify-content-end'>
