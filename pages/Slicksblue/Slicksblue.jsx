@@ -82,41 +82,35 @@ const Slicksblue = ({ customSettings = {} }) => {
 
         <Slider {...settings}>
           <div className='sliderImg'>
-            <div className='imgOuuter'><img src='../assets/image/team01.png' alt="Map" /></div>
-            <h4>Mark Rose</h4>
-            <p className="clientDetails">Front End Developer</p>
+            <div className='imgOuuter'><img src='../assets/image/Shivam-1.png' alt="Map" /></div>
+            <h4>SHIVAM MEHTA</h4>
+            <p className="clientDetails">GAME DESIGNER / 3D ARTIST</p>
           </div>
           <div className='sliderImg'>
-           <div className='imgOuuter'> <img src="../assets/image/team02.png" alt="Image 2" /></div>
-            <h4>Lucy Camille </h4>
-            <p className="clientDetails">Lead Designer</p>
+           <div className='imgOuuter'> <img src="../assets/image/manger.jpeg" alt="Image 2" /></div>
+            <h4>HARJINDER SINGH</h4>
+            <p className="clientDetails">GRAPHIC DESIGNER</p>
 
           </div>
           <div className='sliderImg'>
-           <div className='imgOuuter'> <img src="../assets/image/team03.png" alt="Image 3" /></div>
-            <h4>John Doe</h4>
-            <p className="clientDetails">Game Developer C++</p>
+           <div className='imgOuuter'> <img src="../assets/image/music.jpeg" alt="Image 3" /></div>
+            <h4>OBHI ROY</h4>
+            <p className="clientDetails">MUSIC ARTIST</p>
           </div>
           <div className='sliderImg'>
-           <div className='imgOuuter'> <img src='../assets/image/team01.png' alt="Map" /></div>
-            <h4>Mark Rose</h4>
-            <p className="clientDetails">Front End Developer</p>
+           <div className='imgOuuter'> <img src='../assets/image/developer.jpeg' alt="Map" /></div>
+            <h4>ANIL KUMAR</h4>
+            <p className="clientDetails">GAME DEVELOPER</p>
           </div>
           <div className='sliderImg'>
-            <div className='imgOuuter'><img src="../assets/image/team02.png" alt="Image 2" /></div>
-            <h4>Lucy Camille </h4>
-            <p className="clientDetails">Lead Designer</p>
+           <div className='imgOuuter'> <img src='../assets/image/aman.jpg' alt="Map" /></div>
+            <h4>AMANDEEP SINGH</h4>
+            <p className="clientDetails">REACTJS DEVELOPER</p>
           </div>
-          <div className='sliderImg'>
-           <div className='imgOuuter'> <img src="../assets/image/team03.png" alt="Image 3" /></div>
-            <h4>John Doe</h4>
-            <p className="clientDetails">Game Developer C++</p>
-          </div>
-          <div className='sliderImg'>
-           <div className='imgOuuter'> <img src="../assets/image/team02.png" alt="Image 2" /></div>
-            <h4>Lucy Camille </h4>
-            <p className="clientDetails">Lead Designer</p>
-          </div>
+         
+         
+           
+          
         </Slider>
 
 

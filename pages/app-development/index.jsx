@@ -7,59 +7,77 @@ import Header from "../../Component/Header/Index"
 import Footer from "../../Component/Footer/Footer"
 import Image from 'next/image'
 
-import fisrt from "../../public/assets/image/actiongames.png"
+import Social from "../../public/assets/appImage/soical.png"
+import Ecommerce from "../../public/assets/appImage/ecommerse.png"
+import Product from "../../public/assets/appImage/prodectivity.png"
+import Education from "../../public/assets/appImage/education.png"
+import HealthFitness from "../../public/assets/appImage/healthfitness.png"
+import News from "../../public/assets/appImage/news.png"
+import Wather from "../../public/assets/appImage/waether.png"
+import Music from "../../public/assets/appImage/music.png"
+import Travel from "../../public/assets/appImage/tarvel.png"
+import Food from "../../public/assets/appImage/food.png"
+import lifestyle from "../../public/assets/appImage/lifestyle.png"
+import ultities from "../../public/assets/appImage/ultities.png"
+import photo from "../../public/assets/appImage/photo.png"
+import communication from "../../public/assets/appImage/communication.png"
+import finacing from "../../public/assets/appImage/finacing.png"
 
 
 const ImageText = [{
-  image: fisrt,
-  title: "ACTION GAMES"
+  image: Social,
+  title: "SOCIAL NETWORKING APPS"
 },
 {
-  image: fisrt,
-  title: "ACTION GAMES"
+  image: Ecommerce,
+  title: "E-COMMERCE APPS "
 },
 {
-  image: fisrt,
-  title: "ACTION GAMES"
+  image: Product,
+  title: "PRODUCTIVITY APPS"
 }, {
-  image: fisrt,
-  title: "ACTION GAMES"
+  image: Education,
+  title: "EDUCATION APPS"
 }, {
-  image: fisrt,
-  title: "ACTION GAMES"
+  image: HealthFitness,
+  title: "HEALTH & FITNESS APPS"
 }, {
-  image: fisrt,
-  title: "ACTION GAMES"
+  image: News,
+  title: "NEWS & MAGAZINE APPS"
 }, {
-  image: fisrt,
-  title: "ACTION GAMES"
+  image: Wather,
+  title: "WEATHER APPS"
 }, {
-  image: fisrt,
-  title: "ACTION GAMES"
+  image: Music,
+  title: "MUSIC & VIDEO STREAMING APPS"
 }, {
-  image: fisrt,
-  title: "ACTION GAMES"
+  image: Travel,
+  title: "TRAVEL & NAVIGATION APPS"
 }
 , {
-  image: fisrt,
-  title: "ACTION GAMES"
+  image: Food,
+  title: "FOOD & RECIPE APPS"
 }
 , {
-  image: fisrt,
-  title: "ACTION GAMES"
+  image: lifestyle,
+  title: "LIFESTYLE  & ENTERTAINMENT APPS"
 }
 , {
-  image: fisrt,
-  title: "ACTION GAMES"
+  image: ultities,
+  title: "UTILITIES & TOOLS APPS"
 }
 , {
-  image: fisrt,
-  title: "ACTION GAMES"
+  image: photo,
+  title: "PHOTOGRAPHY & EDITING APPS"
 }
 , {
-  image: fisrt,
-  title: "ACTION GAMES"
-}]
+  image: communication,
+  title: "COMMUNICATION APPS"
+}, {
+  image: finacing,
+  title: "FINANCING & BANKING APPS"
+}
+]
 
 export default function index() {
   return (

@@ -15,6 +15,8 @@ export default function index() {
         </div>
       </div>
 
+      {/* hekko */}
+
       {/* games-categories */}
 
       <div className="games-catgr">

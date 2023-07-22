@@ -1,81 +1,62 @@
-// import React from 'react'
-// import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
+"use Client";
+
+import React, { useEffect, useRef } from "react";
 
 
 
-// const containerStyle = {
-//   width: '400px',
-//   height: '400px'
-// };
+const  Map = () => {
+  const mapContainerRef = useRef(null);
+  const jubileeWalkLatLng = { lat: 30.6862, lng: 76.7077 };
+  const markerTitle = "RBS LABS, Sector 70, Mohali";
+  let marker;
 
-// const center = {
-//   lat: 30.708690,
-//   lng: 76.742320
-// };
+  useEffect(() => {
+    let map;
+    let infoWindow;
 
-// function MyComponent() {
-//   const { isLoaded } = useJsApiLoader({
-//     id: 'google-map-script',
-//     googleMapsApiKey: "AIzaSyDFV4xaQARSMROoLZGQBkbiRuBsz5LYUik"
-//   })
+    const loadMap = () => {
+      map = new window.google.maps.Map(mapContainerRef.current, {
+        center: jubileeWalkLatLng,
+        zoom: 16,
+      });
 
-//   const [map, setMap] = React.useState(null)
+      marker = new window.google.maps.Marker({
+        position: jubileeWalkLatLng,
+        map: map,
+        title: markerTitle,
+        animation: window.google.maps.Animation.DROP,
+      });
 
-//   const onLoad = React.useCallback(function callback(map) {
-//     // This is just an example of getting and using the map instance!!! don't just blindly copy!
-//     const bounds = new window.google.maps.LatLngBounds(center);
-//     map.fitBounds(bounds);
+      infoWindow = new window.google.maps.InfoWindow({
+        content: `<div>${markerTitle}</div>`,
+      });
 
-//     setMap(map)
-//   }, [])
+      // Add a click event listener to show the info window when the marker is clicked
+      marker.addListener("click", () => {
+        infoWindow.open(map, marker);
+      });
+    };
 
-//   const onUnmount = React.useCallback(function callback(map) {
-//     setMap(null)
-//   }, [])
+    // Load Google Maps script dynamically on the client-side
+    if (typeof window !== "undefined" && typeof window.google === "undefined") {
+      const script = document.createElement("script");
+      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDFV4xaQARSMROoLZGQBkbiRuBsz5LYUik`;
+      script.async = true;
+      script.defer = true;
+      script.onload = loadMap;
+      document.head.appendChild(script);
+    } else {
+      loadMap();
+    }
 
-//   return isLoaded ? (
-//     <GoogleMap
-//       mapContainerStyle={containerStyle}
-//       // center={center}
-//       zoom={-2}
-     
-//       onLoad={onLoad}
-//       onUnmount={onUnmount}
-//     >
-//       <Marker position={{
-//         lat: 30.708690,
-//         lng: 76.742320
-//       }} />
-//       <></>
-//     </GoogleMap>
-//   ) : <></>
-// }
+    return () => {
+      if (marker) {
+        marker.setMap(null);
+      }
+    };
+  }, []);
 
-// export default React.memo(MyComponent)
-
-
-"user client"
-import 'bootstrap/dist/css/bootstrap.css';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-
-const Map = () => {
-  const containerStyle = {
-    width: '100%',
-    height: '400px',
-  };
-
-  const center = {
-    lat: 30.706413,
-    lng:  76.718100,
-  };
-
-  return (
-    <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={13}>
-        <Marker position={center} />
-      </GoogleMap>
-    </LoadScript>
-  );
+  return <div className="responsive-map" ref={mapContainerRef} style={{ height: '600px' }}></div>;
 };
 
-export default Map;
+export default  Map;

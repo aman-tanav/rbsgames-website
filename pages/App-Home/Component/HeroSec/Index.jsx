@@ -48,11 +48,11 @@ const HeroSecIndex = () => {
                 Integrate best innovative solutions
               </h3>
 
-              <p className="m-0 py-2">
+              <p className="banner_dis m-0 py-2">
                 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
                 Lorem Ipsum
               </p>
-              <div className="btnWrp text-center d-flex justify-content-center mt-4">
+              <div className="btnWrp">
                 <Button className="d-inline-flex align-items-center justify-content-center common-btn">
                   Join Now!
                 </Button>

@@ -1,10 +1,12 @@
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 
 const OurCustomer = ({ customSettings = {} }) => {
+  const [sliderPosition, setSliderPosition] = useState(50); 
   const settings = {
     dots: true,
     slidesToShow: 6,
@@ -30,6 +32,7 @@ const OurCustomer = ({ customSettings = {} }) => {
       }
     ]
   };
+
 
   return (
     <div>
@@ -121,7 +124,7 @@ const OurCustomer = ({ customSettings = {} }) => {
               </Slider>
 
               <div className='rangeOutter'>
-                <input type="range" min="1" max="100" defaultValue="50" className="rangMain" id="myRange" />
+                <input type="range" min="1" max="100" defaultValue="50" className="rangMain" id="myRange"  />
               </div>
             </div>
           </div>
