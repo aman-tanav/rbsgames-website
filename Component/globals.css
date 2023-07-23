@@ -1189,6 +1189,15 @@ li:hover .browserListBg img {
 
 /*home page css*/
 
+
+/* filter css */
+h6.mb-3.position-relative.pb-2.underLine.text-uppercase.w-100 {
+    top: -13px;
+    left: -4px;
+}
+
+/* end filter css */
+
 section.HeroSec .carousel.slide .carousel-caption h3 {
     color: #FFF;
     text-align: center;
