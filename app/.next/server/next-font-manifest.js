@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{"/Pressslider/Pressslider":[],"/Slicksblue/Slicksblue":[],"/Slicksexplore/Slicksexplore":[],"/about":[],"/careers":[],"/news":[],"/ourcustomer/Ourcustomer":[],"/slicks/Slicks":[]},"app":{},"appUsingSizeAdjust":false,"pagesUsingSizeAdjust":false}';
